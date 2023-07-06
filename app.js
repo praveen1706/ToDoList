@@ -16,8 +16,8 @@ app.set("view engine", "ejs");  //view folder created
 
 app.get("/", function(req, res){
 
-    // let day = date.getDate();   //calling module file 
-    let day = date.getDay();   //calling module file 
+    let day = date.getDate();   //calling module file 
+    // let day = date.getDay();   //calling module file 
 
     res.render("list", {listTitle: day, newListItems: items}); 
     //only one res.render is allowed
